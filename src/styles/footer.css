@@ -1,0 +1,38 @@
+.footer {
+    height: 10%;
+    margin-top: auto;
+    color: black;
+    /* border: 1px solid red; */
+    font-size: 16px;
+    margin-right: 80px;
+}
+
+.footer div {
+    float:right;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+}
+
+.footer div .icon {
+    font-size: 16px;
+}
+
+.footer div .inactive {
+    color: rgba(230, 185, 112, 0.3);
+}
+
+.footer div .active {
+    color: var(--primaryColor);
+}
+.pagination{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 10px;
+    color: white;
+}
+.pagination ul{
+    color: white;
+}

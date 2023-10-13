@@ -1,0 +1,30 @@
+@keyframes bouncing-loader {
+    to {
+      opacity: 0.1;
+      transform: translate3d(0, -16px, 0);
+    }
+  }
+  
+  .bouncing-loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bouncing-loader > div {
+    width: 24px;
+    height: 24px;
+    margin: 3rem 0.2rem;
+    background: rgba(234, 88, 12, 1);
+    border-radius: 50%;
+    animation: bouncing-loader 0.6s infinite alternate;
+  }
+  
+  .bouncing-loader > div:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .bouncing-loader > div:nth-child(3) {
+    animation-delay: 0.4s;
+  }

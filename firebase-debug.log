@@ -1,0 +1,27 @@
+[debug] [2023-05-14T08:07:55.658Z] ----------------------------------------------------------------------
+[debug] [2023-05-14T08:07:55.661Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nexgen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-14T08:07:55.662Z] CLI Version:   12.0.0
+[debug] [2023-05-14T08:07:55.662Z] Platform:      win32
+[debug] [2023-05-14T08:07:55.662Z] Node Version:  v16.17.1
+[debug] [2023-05-14T08:07:55.663Z] Time:          Sun May 14 2023 13:07:55 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-05-14T08:07:55.664Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-14T08:07:55.797Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-14T08:07:55.798Z] > authorizing via signed-in user (aymanayub1999@gmail.com)
+[debug] [2023-05-14T08:07:55.798Z] [iam] checking project restaurant-2a95c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-14T08:07:55.802Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/restaurant-2a95c:testIamPermissions [none]
+[debug] [2023-05-14T08:07:55.803Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/restaurant-2a95c:testIamPermissions x-goog-quota-user=projects/restaurant-2a95c
+[debug] [2023-05-14T08:07:55.803Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/restaurant-2a95c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-14T08:07:57.525Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/restaurant-2a95c:testIamPermissions 200
+[debug] [2023-05-14T08:07:57.527Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/restaurant-2a95c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-14T08:07:57.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/restaurant-2a95c [none]
+[debug] [2023-05-14T08:07:59.078Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/restaurant-2a95c 200
+[debug] [2023-05-14T08:07:59.078Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/restaurant-2a95c {"projectId":"restaurant-2a95c","projectNumber":"276104697935","displayName":"restaurant","name":"projects/restaurant-2a95c","resources":{"hostingSite":"restaurant-2a95c"},"state":"ACTIVE","etag":"1_cb9081fe-310c-4303-8099-0dd9bfe2ecde"}
+[info] 
+[info] === Deploying to 'restaurant-2a95c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-14T08:07:59.096Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/restaurant-2a95c/versions [none]
+[debug] [2023-05-14T08:07:59.096Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/restaurant-2a95c/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-14T08:08:01.715Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/restaurant-2a95c/versions 200
+[debug] [2023-05-14T08:08:01.715Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/restaurant-2a95c/versions {"name":"projects/276104697935/sites/restaurant-2a95c/versions/e38ff35ed91da84a","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
